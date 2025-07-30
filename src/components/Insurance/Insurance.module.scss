@@ -1,0 +1,117 @@
+:global(:where(.css-dev-only-do-not-override-1q6e4sb).ant-card .ant-card-body) {
+  padding: 0;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 7px;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #fafafa;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #059672, #04786d);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+  }
+}
+
+.wrap {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.image {
+  max-width: 250px;
+  position: relative;
+  padding-bottom: 30%;
+  width: 100%;
+  border-radius: 7px;
+  overflow: hidden;
+  flex: 0 0 auto;
+
+  @media (max-width: 575px) {
+    max-width: none;
+    padding-bottom: 50%;
+  }
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+}
+
+.mainContent {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.title {
+  margin-bottom: 5px;
+}
+
+.description {
+  white-space: pre-wrap;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.badge_collapse {
+  flex: 0 1 100%;
+}
+
+.badgeWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  padding-top: 15px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.meta {
+  color: #059669;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.collapse {
+  & > .ant-collapse-header {
+    padding-left: 0;
+  }
+}
+
+:global(
+  :where(.css-dev-only-do-not-override-1q6e4sb).ant-collapse
+    > .ant-collapse-item:last-child
+    > .ant-collapse-header
+) {
+  padding-left: 0;
+  padding-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  font-weight: 500;
+}
+
+.select {
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,366 @@
+:global {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s cubic-bezier(0.25, 0, 0.35, 0.95) forwards;
+}
+
+#root {
+  .ant-progress-line {
+    font-size: 0;
+    position: absolute;
+  }
+  .ant-progress .ant-progress-inner {
+    background-color: transparent;
+  }
+
+  .appResult-loader {
+    position: fixed;
+    inset: 0;
+    top: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    z-index: 9999;
+
+    @media (max-width: 767px) {
+      top: 57px;
+    }
+  }
+
+  #insurance.insuranceInformation {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    & > * {
+      display: inline-block;
+    }
+    .insuranceName {
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+
+  .ant-spin-dot-item {
+    background: #059669;
+  }
+
+  .ant-form-item .ant-form-item-control-input {
+    min-height: 60px;
+  }
+
+  .ant-form-item-control-input-content > * {
+    box-shadow: none;
+
+    &,
+    .ant-select-selection-item {
+      font-size: 15px;
+      line-height: 22px;
+    }
+
+    &:is(.ant-select) {
+      height: 52px;
+    }
+    &:is(input) {
+      padding: 14px 13px;
+    }
+
+    &:is(textarea) {
+      @media (max-width: 450px) {
+        padding: 13px 20px;
+      }
+
+      &::placeholder,
+      &::-webkit-input-placeholder {
+        color: #898787;
+        font-size: 15px;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .ant-form-item-explain-error {
+    font-size: 13px;
+    line-height: 13px;
+    padding: 2px 5px 5px;
+  }
+
+  .ant-select {
+    &:is(.ant-select-focused),
+    &:hover {
+      .ant-select-selector {
+        box-shadow: none;
+        border-color: #059669;
+      }
+    }
+  }
+
+  .ant-input-outlined {
+    &:hover,
+    &:focus {
+      border-color: #059669;
+    }
+  }
+  .ant-select {
+    &:is(.ant-select-focused),
+    &:hover {
+      .ant-select-selector {
+        box-shadow: none;
+        border-color: #059669;
+      }
+    }
+  }
+
+  .ant-form-item-label > label,
+  .ant-radio-wrapper span.ant-radio + * {
+    color: #666666;
+  }
+
+  .insuranceInformationEdit {
+    margin-right: 10px;
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+  }
+  .marker {
+    top: 20px;
+    font-size: 11px;
+    line-height: 20px;
+    color: #dc111a;
+  }
+}
+
+.ant-select-item-group.book-App__option-group {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+
+  @media (max-width: 575px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+#root .ant-select-selection-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#root .ant-select-selection-wrap {
+  font-size: 15px;
+}
+
+.ant-select-item-option-grouped.book-App__option-item {
+  padding: 5px 10px 5px 20px;
+  max-width: 100%;
+  width: 100%;
+
+  @media (max-width: 575px) {
+    padding: 5px 10px;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  :where(.css-dev-only-do-not-override-1amip7b).ant-picker-dropdown .ant-picker-date-panel {
+    max-width: 330px;
+    width: 100%;
+  }
+}
+
+.ant-select-item-option-content {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  color: #707070;
+  @media (max-width: 575px) {
+    padding: 1px;
+    white-space: normal !important;
+  }
+}
+
+.ant-select-selection-item .insurances-icon {
+  border-color: transparent;
+  max-width: 45px;
+}
+
+.insurances-icon {
+  max-height: 49px;
+  max-width: 49px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dcdce6;
+  border-radius: 5px;
+
+  @media (max-width: 575px) {
+    max-width: 42px;
+    max-height: 42px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.UserForm {
+  .ant-form-item {
+    margin: 0;
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  .ant-row {
+    height: 73px;
+    transition: 0.3s all;
+  }
+
+  .ant-form-item-has-error .ant-row {
+    height: 80px;
+  }
+
+  .ant-input-outlined {
+    height: 60px;
+  }
+
+  textarea.ant-input-outlined {
+    padding-left: 20px;
+  }
+
+  @media (max-width: 450px) {
+    .ant-divider {
+      display: none;
+    }
+  }
+}
+
+.input-group {
+  position: relative;
+  background-color: #ffffff;
+
+  &.hidden {
+    display: none;
+  }
+
+  .ant-input {
+    &:focus {
+      box-shadow: none;
+    }
+    &:-webkit-autofill {
+      box-shadow: 0 0 0 1000px #ffffff inset !important;
+    }
+  }
+
+  label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    color: #898787;
+    font-size: 15px;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  input {
+    padding: 20px 20px 6px;
+    font-size: 15px;
+    border: 1px solid #e8e8e1;
+    border-radius: 7px;
+    @media (max-width: 450px) {
+      height: 60px;
+    }
+  }
+
+  input:focus ~ label {
+    top: 14px;
+    font-size: 12px;
+    color: #a1a1a1;
+  }
+
+  .datePicker {
+    width: 100%;
+    padding: 20px 11px 6px;
+
+    .ant-picker-suffix {
+      margin-top: -13px;
+    }
+
+    .ant-picker-clear {
+      margin-top: -6px;
+    }
+
+    &:hover {
+      border-color: #059669;
+    }
+
+    &:focus-within {
+      border-color: #059669;
+      box-shadow: none;
+    }
+  }
+
+  &:focus-within label {
+    top: 12px;
+    font-size: 12px;
+  }
+
+  &.filled label {
+    top: 12px;
+    font-size: 12px;
+  }
+}
+
+.required_field label::after {
+  content: '*';
+  color: #dd3030;
+}
+
+.required_field {
+  textarea {
+    background: linear-gradient(90deg, #666666 16%, rgba(221, 48, 48, 1) 0%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+    caret-color: #000 !important;
+    background-attachment: local !important;
+    background-repeat: no-repeat !important;
+  }
+  .ant-form-item-control-input-content {
+    background-color: #ffffff;
+  }
+
+  .no-empty {
+    background: none !important;
+    color: #000000e0 !important;
+    -webkit-text-fill-color: initial !important;
+    background-clip: border-box !important;
+  }
+}
+
+:where(.css-dev-only-do-not-override-1amip7b).ant-space-gap-col-middle {
+  @media (max-width: 575px) {
+    column-gap: 10px;
+  }
+}
+
+.ant-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: #bbcbd8 !important;
+}

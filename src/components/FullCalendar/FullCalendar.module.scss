@@ -1,0 +1,280 @@
+@keyframes showPopup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hidePopup {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes showPopupWrapper {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes hidePopupWrapper {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  z-index: 10001;
+  transition: 0.3s all;
+}
+
+.showPopup {
+  visibility: visible;
+  animation: showPopup 0.5s cubic-bezier(0.25, 0.85, 0.35, 1) forwards;
+}
+
+.hidePopup {
+  visibility: hidden;
+  animation: hidePopup 0.5s cubic-bezier(0.25, 0.85, 0.35, 1) forwards;
+}
+
+.popupWrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 715px;
+  margin: 0 auto;
+  transition: 0.3s all;
+}
+
+.showPopupWrap {
+  animation: showPopupWrapper 0.5s cubic-bezier(0.25, 0.85, 0.35, 1) forwards;
+}
+
+.hidePopupWrap {
+  animation: hidePopupWrapper 0.5s cubic-bezier(0.25, 0.85, 0.35, 1) forwards;
+}
+
+.picker {
+  position: fixed;
+  bottom: 0;
+  z-index: 10002;
+  background: #ffffff;
+  padding: 50px 30px 0;
+  width: 100%;
+  height: calc(-128px + 100vh);
+  overflow: auto;
+
+  @media (max-width: 715px) {
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  @media (max-width: 680px) {
+    padding: 20px 10px 0;
+  }
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  background: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+
+  &:hover {
+    background-color: #f8f8f8;
+  }
+
+  @media (max-width: 575px) {
+    width: 30px;
+    height: 30px;
+
+    svg {
+      width: 17px;
+      height: 17px;
+    }
+  }
+}
+
+.title {
+  // font-family: 'Mo', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 68px;
+  text-transform: capitalize;
+
+  @media (max-width: 575px) {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    margin: 0 0 26px;
+  }
+}
+
+.calendar {
+}
+
+.btnInner {
+  position: sticky;
+  bottom: 0px;
+}
+
+.btnInner {
+  background-color: #ffffff;
+  padding: 0 0 15px;
+}
+
+.shadow {
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(0, #ffffff 0%, rgba(250, 248, 245, 0) 85.71%);
+  @media (max-width: 575px) {
+    height: 20px;
+  }
+}
+
+.submit {
+  border: none;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all;
+  white-space: nowrap;
+  padding: 13px 24px;
+  height: 48px;
+  border-radius: 100px;
+  background-color: #059669;
+  color: #ffffff;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  vertical-align: middle;
+  text-transform: capitalize;
+}
+
+.monthWrap {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  min-width: 327px;
+  user-select: none;
+
+  @media (max-width: 575px) {
+    margin-bottom: 25px;
+  }
+}
+
+.monthTitle {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  vertical-align: middle;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.gridInner {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.monthGrid {
+  display: grid;
+  gap: 5.5px;
+  grid-template-columns: repeat(7, 1fr);
+  place-items: center;
+}
+
+.dayNames {
+  display: grid;
+  gap: 5.5px;
+  grid-template-columns: repeat(7, 1fr);
+  place-items: center;
+}
+
+.dayName {
+  flex: 0 1 calc(100% / 7);
+  margin: 0;
+  font-weight: 500;
+  color: #666666;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.empty,
+.day {
+  flex: 0 1 calc(100% / 7);
+  // font-family: 'AltairEO';
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.28px;
+  line-height: 20px;
+  text-transform: none;
+  position: relative;
+  border: none;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.day {
+  transition: 0.3s all;
+  &:hover {
+    background-color: #f8f8f8;
+  }
+}
+
+.selected {
+  background-color: #059669;
+  color: #ffffff;
+  &:hover {
+    background-color: #11b38f;
+  }
+}
+
+.today {
+  border: 1px solid #059669;
+}

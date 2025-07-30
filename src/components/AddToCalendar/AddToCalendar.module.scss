@@ -1,0 +1,23 @@
+.addToCalendar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0f2fe;
+  color: #000000;
+  width: 35px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 15px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  fill: currentColor;
+}

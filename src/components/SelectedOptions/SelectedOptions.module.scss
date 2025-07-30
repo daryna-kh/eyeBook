@@ -1,0 +1,45 @@
+.summaryCard {
+  border: none;
+  background-color: transparent;
+  margin-bottom: 20px;
+
+  & > :global(.ant-card-body) {
+    padding: 0 !important;
+  }
+
+  @media (max-width: 767px) {
+    box-shadow: 0px 0px 6px 0px #0000001a;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+}
+
+.infoTable {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.label,
+.value {
+  align-content: baseline;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  text-transform: capitalize;
+}
+
+.value {
+  text-transform: capitalize;
+  padding-left: 45px;
+  white-space: pre-line;
+  line-height: 24px;
+
+  @media (max-width: 390px) {
+    padding-left: 15px;
+  }
+}

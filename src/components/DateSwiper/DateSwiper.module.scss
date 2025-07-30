@@ -1,0 +1,148 @@
+.Swiper {
+  padding: 5px 2px 5px 0;
+}
+.daySlotWrapper {
+  max-width: 100px !important;
+  display: flex !important;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+
+  @media (max-width: 450px) {
+    max-width: 96px !important;
+  }
+
+  & > button {
+    width: 100%;
+  }
+}
+
+button {
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.dayButton {
+  padding: 12px 0;
+  white-space: pre-line;
+}
+
+.dayButton {
+  box-shadow: 0px 0px 6px 0px #0000001a;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  transition: 0.3s all;
+  &:hover {
+    border: 1px solid #3bbc96;
+  }
+}
+
+.navButton {
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 4px 3px 0px #00000021;
+  padding: 8px 10px;
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  transition: 0.3s all;
+  opacity: 0.5;
+
+  svg {
+    width: 14px;
+    height: 9px;
+  }
+
+  @media (max-width: 767px) {
+    top: 22px;
+  }
+
+  @media (max-width: 520px) {
+    // top: 13px;
+    // padding: 10px 12px;
+    display: none;
+  }
+
+  &[disabled] {
+    display: none;
+  }
+
+  &:hover {
+    background-color: #f8f8f8;
+  }
+}
+
+.navButton_prev {
+  left: 0;
+}
+.navButton_next {
+  right: 0;
+}
+
+.showMore {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  button {
+    border-radius: 100px;
+    font-size: 14px;
+    letter-spacing: 0.28px;
+    line-height: 20px;
+    border: none;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1019607843);
+    transition: 0.3s all;
+
+    &:hover {
+      background-color: #f8f8f8;
+    }
+  }
+}
+
+.dayButton {
+  padding: 9px 0;
+
+  &.active {
+    border: 1px solid #059669;
+    background-color: #059669;
+
+    p {
+      color: #ffffff;
+    }
+  }
+
+  &.disabled {
+    opacity: 0.7;
+    pointer-events: none;
+  }
+
+  p {
+    margin: 0 0 2px 0;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    text-transform: capitalize;
+
+    &:not(.weekday) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.1px;
+      vertical-align: middle;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.weekday {
+  // font-family: 'AltairEO';
+  font-size: 13px;
+  color: #666666;
+  margin-bottom: 5px;
+}
+
+.dayNumber {
+  // font-family: 'RigelEO';
+  font-size: 14px;
+}

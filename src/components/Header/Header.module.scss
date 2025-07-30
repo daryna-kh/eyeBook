@@ -1,0 +1,26 @@
+.sidebar {
+  border-bottom: 1px solid #d3d2d2;
+}
+.logo {
+  padding: 17px 0;
+  @media (max-width: 767px) {
+    padding: 15px 0;
+  }
+}
+.title {
+  text-align: center;
+  background: #555353;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 22px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  margin: 0;
+  position: relative;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
+}
