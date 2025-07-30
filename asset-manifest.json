@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/eyeBook/static/css/main.f320070a.css",
+    "main.js": "/eyeBook/static/js/main.1976e7ed.js",
+    "index.html": "/eyeBook/index.html",
+    "main.f320070a.css.map": "/eyeBook/static/css/main.f320070a.css.map",
+    "main.1976e7ed.js.map": "/eyeBook/static/js/main.1976e7ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f320070a.css",
+    "static/js/main.1976e7ed.js"
+  ]
+}
