@@ -2,6 +2,7 @@
   "name": "eyeBook",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://daryna-kh.github.io/eyeBook/",
   "dependencies": {
     "@ant-design/icons": "^5.5.2",
     "@reduxjs/toolkit": "^2.5.0",

@@ -15,8 +15,6 @@ function generateHash() {
 export function mockBookingResponse(): BookingResponse | null {
   const isSuccess = Math.random() < 0.5;
 
-  console.log(isSuccess);
-
   if (!isSuccess) {
     return null;
   }

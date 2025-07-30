@@ -1,6 +1,6 @@
 export const storeName = process.env.REACT_APP_STORE_NAME;
 export const apiKey = process.env.REACT_APP_KEY;
-export const baseUrl = process.env.REACT_APP_BASE_URL;
+export const baseUrl = process.env.REACT_APP_BASE_URL || '/';
 
 export const months = [
   'January',
