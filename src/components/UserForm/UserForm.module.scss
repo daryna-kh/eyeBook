@@ -75,9 +75,9 @@
   font-size: 12px;
 }
 
-:global(
-  :where(.css-dev-only-do-not-override-1q6e4sb).ant-form-item .ant-form-item-control-input-content
-) {
-  overflow: hidden;
-  border-radius: 7px;
-}
+// :global(
+//   :where(.css-dev-only-do-not-override-1q6e4sb).ant-form-item .ant-form-item-control-input-content
+// ) {
+//   overflow: hidden;
+//   border-radius: 7px;
+// }

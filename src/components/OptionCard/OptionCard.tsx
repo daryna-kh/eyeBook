@@ -26,7 +26,7 @@ export const OptionCard = ({ id }: OptionCardProps) => {
 
   let imgUrl = '';
   if (img) {
-    imgUrl = `${baseUrl}assets/images/options/${id}.png`;
+    imgUrl = `${baseUrl}eyeBook/assets/images/options/${id}.png`;
   }
 
   return (

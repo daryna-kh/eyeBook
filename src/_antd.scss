@@ -22,19 +22,27 @@
     background-color: transparent;
   }
 
-  .appResult-loader {
-    position: fixed;
-    inset: 0;
-    top: 62px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f8f8f8;
-    z-index: 9999;
+  .ant-card .ant-card-body {
+    padding: 0;
+    width: 100%;
+  }
 
-    @media (max-width: 767px) {
-      top: 57px;
-    }
+  .ant-collapse > .ant-collapse-item:last-child > .ant-collapse-header {
+    padding-left: 0;
+    padding-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-weight: 500;
+  }
+
+  .ant-collapse-ghost > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
+    font-family: 'Montserrat', sans-serif;
+    color: #6b7280;
+  }
+
+  .ant-form-item .ant-form-item-control-input-content {
+    overflow: hidden;
+    border-radius: 7px;
   }
 
   #insurance.insuranceInformation {

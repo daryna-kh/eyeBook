@@ -88,7 +88,7 @@ export const Insurance = () => {
                     <div className='insurances-icon'>
                       <img
                         style={{ display: 'block' }}
-                        src={`${baseUrl}assets/images/insuranseIcons/${opt.id}.svg`}
+                        src={`${baseUrl}eyeBook/assets/images/insuranseIcons/${opt.id}.svg`}
                         alt={opt.id}
                       />
                     </div>

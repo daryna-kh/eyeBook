@@ -1,7 +1,7 @@
-:global(:where(.css-dev-only-do-not-override-1q6e4sb).ant-card .ant-card-body) {
-  padding: 0;
-  width: 100%;
-}
+// :global(:where(.css-dev-only-do-not-override-1q6e4sb).ant-card .ant-card-body) {
+//   padding: 0;
+//   width: 100%;
+// }
 
 .card {
   display: flex;
@@ -96,18 +96,6 @@
   & > .ant-collapse-header {
     padding-left: 0;
   }
-}
-
-:global(
-  :where(.css-dev-only-do-not-override-1q6e4sb).ant-collapse
-    > .ant-collapse-item:last-child
-    > .ant-collapse-header
-) {
-  padding-left: 0;
-  padding-top: 0;
-  font-family: 'Montserrat', sans-serif;
-  color: #000000;
-  font-weight: 500;
 }
 
 .select {
