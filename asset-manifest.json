@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/eyeBook/static/css/main.f320070a.css",
+    "main.css": "/eyeBook/static/css/main.14fcf19e.css",
     "main.js": "/eyeBook/static/js/main.cd2b412a.js",
     "index.html": "/eyeBook/index.html",
-    "main.f320070a.css.map": "/eyeBook/static/css/main.f320070a.css.map",
+    "main.14fcf19e.css.map": "/eyeBook/static/css/main.14fcf19e.css.map",
     "main.cd2b412a.js.map": "/eyeBook/static/js/main.cd2b412a.js.map"
   },
   "entrypoints": [
-    "static/css/main.f320070a.css",
+    "static/css/main.14fcf19e.css",
     "static/js/main.cd2b412a.js"
   ]
 }
